@@ -29,6 +29,8 @@ const router = express.Router()
 
 registerSimpleRouter()
 
+registerBaseRouter()
+
 app.use(router)
 
 const port = process.env.PORT || 8081
@@ -41,5 +43,11 @@ function registerSimpleRouter() {
     res.json({
       msg: 'hello world'
     })
+  })
+}
+
+function registerBaseRouter() {
+  router.get('/base/get', (req, res) => {
+    res.json(req.query)
   })
 }
