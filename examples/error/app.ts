@@ -1,4 +1,4 @@
-import axios, { AxiosResponse, AxiosError } from '../../src/index'
+import axios, { AxiosError } from '../../src/index'
 
 axios({
   method: 'get',
