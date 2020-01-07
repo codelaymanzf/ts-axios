@@ -24,7 +24,11 @@ export interface AxiosRequestConfig {
   timeout?: number
   transformRequest?: AxiosTransformer | AxiosTransformer[]
   transformResponse?: AxiosTransformer | AxiosTransformer[]
+  xsrfCookieName?: string
+  xsrfHeaderName?: string
   [propName: string]: any
+
+  withCredentials?: boolean
 }
 
 export interface AxiosResponse<T = any> {
