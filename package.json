@@ -69,6 +69,7 @@
         "statements": 95
       }
     },
+    "coverageReporters": ["json", "lcovonly", "text", "clover"],
     "collectCoverageFrom": [
       "src/*.{js,ts}",
       "src/**/*.{js,ts}"
